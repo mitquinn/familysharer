@@ -14,3 +14,7 @@
 Route::get('/', 'WelcomeController@show');
 
 Route::get('/home', 'HomeController@show');
+
+Route::get('testing', function() {
+	return View::make('testing');
+});
