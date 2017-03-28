@@ -18,3 +18,6 @@ Route::get('/home', 'HomeController@show');
 Route::get('testing', function() {
 	return View::make('testing');
 });
+
+Route::get('login/facebook', 'Auth\SocialiteController@redirectToProvider');
+Route::get('login/facebook/callback', 'Auth\SocialiteController@handleProviderCallback');
